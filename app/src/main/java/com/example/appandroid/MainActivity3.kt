@@ -21,7 +21,6 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
-
         /**set list*/
         moduleList = ArrayList()
         /**set find id*/
