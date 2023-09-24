@@ -33,7 +33,6 @@ class MainActivity3 : AppCompatActivity() {
         /**SetRecycler view Adapter*/
         recv.adapter = moduleAdapter
         recv.layoutManager = LinearLayoutManager(this)
-
         /**set dialog*/
         addsBtn.setOnClickListener { addInfo()}
 
