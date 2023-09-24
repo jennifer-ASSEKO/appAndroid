@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/simpleEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@color/yellow"
+        android:gravity="left"
+        android:hint="@string/enter_login"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/aplp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Password"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="122dp" />
+
+
+    <EditText
+        android:id="@+id/mot_de_passe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:gravity="left"
+        android:hint="Entrez le mot de passe"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-31dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/grey"
+            android:onClick="addLog"
+            android:padding="20dp"
+            android:text="@string/envoyer"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="279dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="86dp"
+            android:backgroundTint="@color/grey"
+            android:onClick="methodclicked"
+            android:padding="20dp"
+            android:text="Quitter"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="279dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
