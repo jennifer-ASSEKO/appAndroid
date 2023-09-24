@@ -27,11 +27,16 @@ class MainActivity3 : AppCompatActivity() {
         addsBtn = findViewById(R.id.addingBtn)
         recv = findViewById(R.id.mRecycler)
 
+
+        recv.apply {
+
+        }
         /**Set adapter*/
         moduleAdapter = ModuleAdapter(this, moduleList)
         /**SetRecycler view Adapter*/
         recv.adapter = moduleAdapter
         recv.layoutManager = LinearLayoutManager(this)
+
         /**set dialog*/
         addsBtn.setOnClickListener { addInfo()}
 
