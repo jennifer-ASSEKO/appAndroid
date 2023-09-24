@@ -39,14 +39,24 @@ android {
 
     dependencies {
         //noinspection GradleCompatible
-        implementation 'androidx.appcompat-v7:26.1.0'
+
+        implementation 'androidx.appcompat:appcompat:1.1.0' // Use the appropriate version
         implementation 'com.android.support.constraint:constraint-layout:2.0.4'
         implementation 'com.google.android.material:material:1.9.0'
         implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
         testImplementation 'junit:junit:4.13.2'
         androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-        implementation 'com.android.support:multidex:1.0.3'
+        implementation 'androidx.multidex:multidex:2.0.1' // Use androidx.multidex instead of com.android.support
         implementation 'androidx.cardview:cardview:1.0.0'
+
+//        implementation 'androidx.appcompat-v7:28.0.0'
+//        implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+//        implementation 'com.google.android.material:material:1.9.0'
+//        implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+//        testImplementation 'junit:junit:4.13.2'
+//        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+//        implementation 'com.android.support:multidex:1.0.3'
+//        implementation 'androidx.cardview:cardview:1.0.0'
 
         //implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
